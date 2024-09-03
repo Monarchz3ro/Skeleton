@@ -1,0 +1,6 @@
+label start
+hello world
+- go to next scene
+	jump scene2/
+- stay in scene
+stayed in main
