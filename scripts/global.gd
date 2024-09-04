@@ -2,6 +2,7 @@
 extends Node
 
 var inventory = []
+var currentTimeline
 
 signal inventory_updated
 
