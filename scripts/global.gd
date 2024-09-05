@@ -1,13 +1,15 @@
 # global.gd
 extends Node
 
-var inventory = []
+var INVENTORY = []
 var currentTimeline
+
+var HISTORY
 
 signal inventory_updated
 
 func _ready():
-	inventory.resize(20)
+	INVENTORY.resize(20)
 
 func addItem():
 	pass
