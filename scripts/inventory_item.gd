@@ -13,13 +13,18 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if (event is InputEventMouseButton && event.is_pressed()):
-		print("clicked")
-	#	print(typeof(Global.HISTORY.get_simple_history()))
-	#	print(Global.HISTORY.get_simple_history())
 		filterHistory(Global.HISTORY.get_simple_history())
 
 
-func filterHistory(textArray: Array):
-	#textArray = textArray.filter()
-	print(textArray[0]["text"])
-	pass
+# arg: history array
+# ret: array that contains each line as a string. Choices are a dict with the options
+#			and the choice
+func filterHistory(textArray: Array): 
+	return textArray.map(func(x): 
+		if x.has("all_choices"):
+			return {"choices": x["all_choices"],
+				"text": x["text"]
+			}
+		return x["text"]
+	)
+	
