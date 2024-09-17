@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgq2846giiwrx"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_jvyys"]
+[ext_resource type="PackedScene" uid="uid://cpvdeua72y03v" path="res://scenes/history_button.tscn" id="2_ccolt"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_jvyys")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 530.0
+offset_top = 43.0
+offset_right = 570.0
+offset_bottom = 104.0
+text = "main"
+
+[node name="changeToScene2" type="OptionButton" parent="."]
+offset_left = 918.0
+offset_top = 28.0
+offset_right = 1106.0
+offset_bottom = 97.0
+
+[node name="historyButton" parent="." instance=ExtResource("2_ccolt")]
+position = Vector2(69, 49)
+
+[connection signal="pressed" from="changeToScene2" to="." method="_on_change_to_scene_2_pressed"]

@@ -1,8 +1,8 @@
+starting scene to load items with signal
 label start
 hello world
 - go to next scene
 	jump scene2/
 - stay in scene
 stayed in main
-starting scene to load items with signal
 [signal arg="clickable_scene_1"]
