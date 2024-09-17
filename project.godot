@@ -31,7 +31,8 @@ directories/dtl_directory={
 }
 variables={
 "inventoryItems": {
-"item1": false
+"divide": 0,
+"greenArrow": 0
 }
 }
 text/letter_speed=0.01
@@ -51,6 +52,10 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={}
+glossary/default_case_sensitive=true
+layout/style_list=[]
+layout/default_style="Default"
+history/simple_history_enabled=true
 
 [dotnet]
 

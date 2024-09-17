@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq1gf5v7ak4nc"]
+
+[ext_resource type="PackedScene" uid="uid://bgtwu4is1qx01" path="res://scenes/inventory_item.tscn" id="1_fik5n"]
+
+[node name="clickable_scene1" type="Node2D"]
+
+[node name="inventoryItem" parent="." instance=ExtResource("1_fik5n")]
+position = Vector2(325, 263)
+itemName = "greenArrow"
+spritePath = "res://addons/dialogic/Editor/Images/Dropdown/join.svg"
+
+[node name="inventoryItem2" parent="." instance=ExtResource("1_fik5n")]
+position = Vector2(872, 225)
+itemName = "divide"
+spritePath = "res://addons/dialogic/Editor/Images/Dropdown/divide.svg"

@@ -4,3 +4,5 @@ hello world
 	jump scene2/
 - stay in scene
 stayed in main
+starting scene to load items with signal
+[signal arg="clickable_scene_1"]

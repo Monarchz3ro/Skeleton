@@ -2,8 +2,6 @@
 extends Node
 
 var INVENTORY = []
-var currentTimeline
-
 var HISTORY
 
 signal inventory_updated
