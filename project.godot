@@ -54,7 +54,7 @@ save/encryption_on_exports_only=true
 text/autopauses={}
 glossary/default_case_sensitive=true
 layout/style_list=[]
-layout/default_style="Default"
+layout/default_style=""
 history/simple_history_enabled=true
 
 [dotnet]

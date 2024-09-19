@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cq1gf5v7ak4nc"]
+[gd_scene load_steps=3 format=3 uid="uid://cq1gf5v7ak4nc"]
 
 [ext_resource type="PackedScene" uid="uid://bgtwu4is1qx01" path="res://scenes/inventory_item.tscn" id="1_fik5n"]
+[ext_resource type="Script" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_qxtyu"]
 
-[node name="clickable_scene1" type="Node2D"]
+[node name="clickable_scene1" type="Node"]
+script = ExtResource("1_qxtyu")
 
 [node name="inventoryItem" parent="." instance=ExtResource("1_fik5n")]
 position = Vector2(325, 263)

@@ -5,4 +5,7 @@ hello world
 	jump scene2/
 - stay in scene
 stayed in main
-[signal arg="clickable_scene_1"]
+loading clicable scene and pausing
+[signal arg_type="dict" arg="{"filename":"clickable_scene_1","type":"clickableScene"}"]
+[signal arg_type="dict" arg="{"type":"pause"}"]
+unpausing

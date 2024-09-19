@@ -7,10 +7,10 @@
 script = ExtResource("1_jvyys")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 530.0
-offset_top = 43.0
-offset_right = 570.0
-offset_bottom = 104.0
+offset_left = 525.0
+offset_top = 19.0
+offset_right = 678.0
+offset_bottom = 80.0
 text = "main"
 
 [node name="changeToScene2" type="OptionButton" parent="."]

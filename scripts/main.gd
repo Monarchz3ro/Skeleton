@@ -7,14 +7,22 @@ func _ready() -> void:
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	Dialogic.start("res://timelines/main.dtl")
 
+# arg: dictionary with commands
+# ret: none
+# takes a dictionary that will always have a "type" key that says what should happen
 func _on_dialogic_signal(arg):
-	#print(arg)
-	var sceneToLoad = load("res://scenes/%s.tscn" % arg)
-	$".".add_child(sceneToLoad.instantiate())
-	match arg:
-		"clickable_scene_1":
-			print("clsdfasdf")
+	#pass
+	print(arg)
+	match arg.type:
+		"pause":
+			print("pausing")
+			Dialogic.paused = true
+		"clickableScene":
+			print("res://scenes/%s.tscn" % arg.filename)
+			var sceneToLoad = load("res://scenes/%s.tscn" % arg.filename)
+			$".".add_child(sceneToLoad.instantiate())
 		_:
+			print_debug(arg)
 			print_debug("dialogic signal error")
 	pass
 
