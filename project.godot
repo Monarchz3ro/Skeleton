@@ -27,7 +27,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "main": "res://timelines/main.dtl",
-"scene2": "res://timelines/scene2.dtl"
+"tl1": "res://timelines/tl1.dtl",
+"tl2": "res://timelines/tl2.dtl"
 }
 variables={
 "inventoryItems": {
