@@ -5,18 +5,7 @@
 [node name="main" type="Node2D"]
 script = ExtResource("1_jvyys")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 525.0
-offset_top = 19.0
-offset_right = 678.0
-offset_bottom = 80.0
-text = "main"
-
-[node name="Button" type="Button" parent="."]
-visible = false
-offset_left = 198.0
-offset_top = 477.0
-offset_right = 310.0
-offset_bottom = 555.0
-text = "investigate
-"
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 1.0
+offset_right = 819.0
+offset_bottom = 629.0

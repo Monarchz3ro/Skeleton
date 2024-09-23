@@ -23,17 +23,25 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Bobbi": "res://characters/Bobbi.dch",
+"Charles": "res://characters/Charles.dch",
+"Greg Studies": "res://characters/Greg Studies.dch",
+"mysteryCharacter": "res://characters/mysteryCharacter.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"main": "res://timelines/main.dtl",
+"e1p1": "res://timelines/e1p1.dtl",
+"e1p2": "res://timelines/e1p2.dtl",
+"multiply": "res://timelines/multiply.dtl",
+"plus": "res://timelines/plus.dtl",
 "tl1": "res://timelines/tl1.dtl",
-"tl2": "res://timelines/tl2.dtl"
+"tl2": "res://timelines/tl2.dtl",
+"tl3": "res://timelines/tl3.dtl"
 }
 variables={
 "inventoryItems": {
-"divide": 0,
-"greenArrow": 0
+"multiply": 0,
+"plus": 0
 }
 }
 text/letter_speed=0.01
@@ -57,6 +65,12 @@ glossary/default_case_sensitive=true
 layout/style_list=[]
 layout/default_style=""
 history/simple_history_enabled=true
+
+[display]
+
+window/size/viewport_width=819
+window/size/viewport_height=629
+window/size/resizable=false
 
 [dotnet]
 

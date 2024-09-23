@@ -1,25 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://cq1gf5v7ak4nc"]
+[gd_scene load_steps=2 format=3 uid="uid://cq1gf5v7ak4nc"]
 
-[ext_resource type="PackedScene" uid="uid://bgtwu4is1qx01" path="res://scenes/inventory_item.tscn" id="1_fik5n"]
-[ext_resource type="Script" path="res://addons/dialogic/Modules/Background/dialogic_background.gd" id="1_qxtyu"]
-[ext_resource type="Texture2D" uid="uid://crlu3xwku33vb" path="res://tempAssets/blueback.png" id="3_54jmd"]
+[ext_resource type="Script" path="res://scripts/clickable_scene_1.gd" id="1_7dhky"]
 
-[node name="clickable_scene1" type="Node"]
-script = ExtResource("1_qxtyu")
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7dhky")
 
-[node name="inventoryItem" parent="." instance=ExtResource("1_fik5n")]
-z_index = 1
-position = Vector2(325, 263)
-itemName = "greenArrow"
-spritePath = "res://addons/dialogic/Editor/Images/Dropdown/join.svg"
+[node name="continue" type="Button" parent="."]
+visible = false
+offset_left = 972.0
+offset_top = 518.0
+offset_right = 1113.0
+offset_bottom = 603.0
+text = "continue"
 
-[node name="inventoryItem2" parent="." instance=ExtResource("1_fik5n")]
-z_index = 1
-position = Vector2(872, 225)
-itemName = "divide"
-spritePath = "res://addons/dialogic/Editor/Images/Dropdown/divide.svg"
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 1152.0
-offset_bottom = 647.0
-texture = ExtResource("3_54jmd")
+[connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]

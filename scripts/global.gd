@@ -3,6 +3,11 @@ extends Node
 
 #var INVENTORY = []
 #var HISTORY
+enum itemState {
+	GROUND,
+	INVENTORY,
+	DONE
+}
 
 signal inventory_updated
 
