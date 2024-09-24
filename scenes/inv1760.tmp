@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgtwu4is1qx01"]
+
+[ext_resource type="Script" path="res://scripts/inventory_item.gd" id="1_b3j8b"]
+[ext_resource type="Texture2D" uid="uid://b7j220k0ewh35" path="res://addons/dialogic/Editor/Images/Dropdown/join.svg" id="1_qtb80"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_skmlq"]
+radius = 34.2345
+
+[node name="inventoryItem" type="Node2D"]
+script = ExtResource("1_b3j8b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(6.2, 6.2)
+texture = ExtResource("1_qtb80")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_skmlq")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

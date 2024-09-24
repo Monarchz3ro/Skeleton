@@ -1,0 +1,6 @@
+Charles and Bobbi
+loading background
+[wait_input]
+[signal arg_type="dict" arg="{"filename":"redBack.png","type":"background"}"]
+loading clickable
+[signal arg_type="dict" arg="{"filename":"clickable_scene_1","type":"clickableScene"}"]

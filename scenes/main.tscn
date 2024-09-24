@@ -4,3 +4,8 @@
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_jvyys")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 1.0
+offset_right = 819.0
+offset_bottom = 629.0

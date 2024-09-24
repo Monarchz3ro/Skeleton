@@ -1,0 +1,13 @@
+[background arg="res://background/coldOpenBackground.webp" fade="4.0"]
+[wait_input]
+Greg Studies, a normal college student, is preparing for his day early in the morning by taking a nice hot shower. Generic young guy in a t-shirt with a towel around his shoulders.
+Brown hair or whatever you’re feeling. Do whatever you want, just make sure he’s dressed like he just woke up with a towel around his shoulders.
+"Greg Studies": “GAH. Cold… I gotta let this thing warm up…” He backs away from the shower.
+In the unisex bathroom at his local college, he preps for the day. He starts up his phone as he begins playing some music to shower to.
+"Greg Studies": “Huh…?” Greg turns his head and sees all the steam, “What the hell…?”
+“Jesus, did something break? Huh? AAGGGHHHH!”
+mysteryCharacter: “Dinner time…”
+[background arg="res://background/redBack.png" fade="4.0"]
+[wait_input]
+jump e1p2/
+[signal arg_type="dict"]

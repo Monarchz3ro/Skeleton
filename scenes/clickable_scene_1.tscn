@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq1gf5v7ak4nc"]
+
+[ext_resource type="Script" path="res://scripts/clickable_scene_1.gd" id="1_7dhky"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_7dhky")
+
+[node name="continue" type="Button" parent="."]
+visible = false
+offset_left = 972.0
+offset_top = 518.0
+offset_right = 1113.0
+offset_bottom = 603.0
+text = "continue"
+
+[connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]
