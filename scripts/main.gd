@@ -2,8 +2,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#root.move_child(Dialogic, $".".get_index())
 	Dialogic.signal_event.connect(_on_dialogic_signal)
-	Dialogic.start("res://timelines/e1p1.dtl")
+	Dialogic.start("res://timelines/tl1.dtl")
+
 
 # arg: dictionary with commands
 # ret: none
@@ -30,5 +32,11 @@ func _on_dialogic_signal(arg):
 			print_debug("dialogic signal error")
 	pass
 
-func _on_change_to_scene_2_pressed() -> void:
-	print(self.name)
+
+func _on_save_button_pressed() -> void:
+	print(Dialogic.current_timeline)
+	Dialogic.Save.save("", false, Dialogic.Save.ThumbnailMode.NONE)
+
+
+func _on_load_button_pressed() -> void:
+	Dialogic.Save.load()
