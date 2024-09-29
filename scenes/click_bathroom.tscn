@@ -17,14 +17,24 @@ text = "continue"
 [node name="items" type="Node" parent="."]
 
 [node name="inventoryItem" parent="items" instance=ExtResource("2_w73y7")]
-position = Vector2(170, 282)
+position = Vector2(108, 83)
 itemName = "plus"
 spritePath = "res://clickableObjects/plus.svg"
 
 [node name="inventoryItem2" parent="items" instance=ExtResource("2_w73y7")]
-position = Vector2(665, 244)
+position = Vector2(238, 88)
 itemName = "multiply"
 spritePath = "res://clickableObjects/multiply.svg"
 disappearOnClick = true
+
+[node name="inventoryItem3" parent="items" instance=ExtResource("2_w73y7")]
+position = Vector2(357, 86)
+itemName = "body"
+spritePath = "res://clickableObjects/body.svg"
+
+[node name="inventoryItem4" parent="items" instance=ExtResource("2_w73y7")]
+position = Vector2(451, 83)
+itemName = "mirror"
+spritePath = "res://clickableObjects/mirror.svg"
 
 [connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]

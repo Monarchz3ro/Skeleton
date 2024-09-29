@@ -17,10 +17,6 @@ func _on_dialogic_signal(arg):
 	#pass
 	print(arg)
 	match arg.type:
-		"pause": #pause the timeline might not use and delete, it locks mouse
-			print("pausing")
-			Dialogic.paused = true
-			
 		"clickableScene": #loads a scene with clickable objects
 			print("res://scenes/%s.tscn" % arg.filename)
 			sceneToLoad = load("res://scenes/%s.tscn" % arg.filename)
@@ -29,9 +25,14 @@ func _on_dialogic_signal(arg):
 			Dialogic.VAR.set('clickableScene', arg.filename)
 			
 		"background": #changes the background of the timeline
-			print("background")
 			$TextureRect.texture = load("res://background/%s" % arg.filename)
 			
+		"SFX":   
+			$FmodBankLoader/FmodEventEmitter2D["event_parameter/SFX/value"] = arg.SFX
+			
+		"Music":
+			$FmodBankLoader/FmodEventEmitter2D["event_parameter/Music/value"] = arg.Music
+		
 		_: #everything here is an error
 			print_debug(arg)
 			print_debug("dialogic signal error")
