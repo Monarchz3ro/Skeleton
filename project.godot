@@ -39,6 +39,8 @@ directories/dtl_directory={
 "tl3": "res://timelines/tl3.dtl"
 }
 variables={
+"canContinue": false,
+"clickableScene": "",
 "inventoryItems": {
 "multiply": 0,
 "plus": 0
