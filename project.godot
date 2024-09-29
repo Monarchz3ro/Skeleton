@@ -27,6 +27,7 @@ directories/dch_directory={
 "Charles": "res://characters/Charles.dch",
 "Greg Studies": "res://characters/Greg Studies.dch",
 "mysteryCharacter": "res://characters/mysteryCharacter.dch",
+"narrator": "res://characters/narrator.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
