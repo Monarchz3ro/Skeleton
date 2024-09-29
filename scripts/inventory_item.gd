@@ -34,6 +34,5 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 		
 		if canContinue:
 			$"../../continue".visible = true
-		print($"../../continue")
 		# this is need for when when we want to load when the continue button is visable
 		Dialogic.VAR.set("canContinue", true)

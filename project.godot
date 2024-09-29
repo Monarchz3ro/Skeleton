@@ -30,8 +30,13 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
+"afterQuestions": "res://timelines/afterQuestions.dtl",
+"body": "res://timelines/body.dtl",
+"e1Questions": "res://timelines/e1Questions.dtl",
 "e1p1": "res://timelines/e1p1.dtl",
 "e1p2": "res://timelines/e1p2.dtl",
+"finale": "res://timelines/finale.dtl",
+"mirror": "res://timelines/mirror.dtl",
 "multiply": "res://timelines/multiply.dtl",
 "plus": "res://timelines/plus.dtl",
 "tl1": "res://timelines/tl1.dtl",
@@ -39,9 +44,21 @@ directories/dtl_directory={
 "tl3": "res://timelines/tl3.dtl"
 }
 variables={
+"7questions": {
+"beingConcealed": false,
+"orderOfEvents": false,
+"whatCanHurtIt": false,
+"whatCanItDo": false,
+"whatHappendHere": false,
+"whatSortOfCreature": false,
+"whatWasItGoing": false,
+"whereDidItGo": false
+},
 "canContinue": false,
 "clickableScene": "",
 "inventoryItems": {
+"body": 0,
+"mirror": 0,
 "multiply": 0,
 "plus": 0
 }

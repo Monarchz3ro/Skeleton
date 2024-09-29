@@ -1,8 +1,8 @@
 extends Node2D
 
-var requiredItems = ["multiply", "plus"]
+var requiredItems = ["multiply", "plus", "body", "mirror"]
 var doneExamining : bool = false
-var nextTimeline = "tl3"
+var nextTimeline = "e1Questions"
 
 
 func _on_continue_pressed() -> void:

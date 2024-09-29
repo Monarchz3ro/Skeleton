@@ -1,0 +1,96 @@
+Bobbi: “Alright. Lay down the questions.”
+label startOfQuestions
+if {7questions.whatCanHurtIt} == true and {7questions.whatCanItDo} == true and {7questions.whatHappendHere} == true and {7questions.whatSortOfCreature} == true and {7questions.whatWasItGoing} == true and {7questions.whereDidItGo} == true and {7questions.beingConcealed} == true:
+	jump afterQuestions/
+else:
+	- What happened here? [if {7questions.whatHappendHere} == false][else="disable"]
+		label whatHappendHere
+		- Order of Events
+			Charles: “Pretty straight forward. The monster appeared right behind the guy, he turned a bit, got his throat slit, fell over, and the monster disappeared after potentially doing something to his body.”
+			Bobbi: “Lines up with my notes.”
+			set {7questions.whatHappendHere} = true
+			jump startOfQuestions
+		- "wrong opton"
+			Bobbi: “What are you talking about, Xanadu?”
+			jump whatHappendHere
+	- What sort of creature is it? [if {7questions.whatSortOfCreature} == false][else="disable"]
+		label whatSortOfCreature
+		- Something ghostly?
+			Bobbi: “You said it wasn’t going to be a ghost!”
+			Charles: “Oh, right… plus there should probably be ectoplasm anywhere in the room…
+			jump whatSortOfCreature
+		- Something Physical?
+			Charles: “Has to be a physical threat. Vague, I realize, but that means bullets might work a bit better.”
+			Bobbi: “Is it bad to say I left my gun in the car?”
+			set {7questions.whatSortOfCreature} = true
+			jump startOfQuestions
+	- What can it do? [if {7questions.whatCanItDo} == false][else="disable"]
+		label whatCanItDo
+		- Wound on the body
+			Charles: “That wound is the basic extent of what we know beyond basic assumptions like how it got out of here. It can slash, sneak, and leaves these weird red circles and scratches.”
+			Bobbi: “Guess we gotta follow up on that question whenever we actually find the thing.”
+			set {7questions.whatCanItDo} = true
+			jump startOfQuestions
+		- "wrong option"
+			Bobbi: what are you talkking about
+			jump whatCanItDo
+	- What can hurt it? [if {7questions.whatCanHurtIt} == false][else="disable"]
+		label WhatCanHurtIt
+		- Sodium?
+			Bobbi: “Wouldn’t there be evidence of something being exploded in here…?”
+			Charles: “Ah. Right. I guess all the water had me thinking about a previous case.”
+			jump WhatCanHurtIt
+		- Blood
+			Bobbi: “If blood could hurt it, why would it kill someone so viscerally?”
+			Charles: “Fair point. I think the lack of blood was making me think of something else…”
+			jump WhatCanHurtIt
+		- Unkown?
+			Charles: “Sorry to say, there’s nothing here to really give us an idea for a weakness. I’ll just have to keep my mind open.”
+			set {7questions.whatCanHurtIt} = true
+			jump startOfQuestions
+	- Where Did it go? [if {7questions.whereDidItGo} == false][else="disable"]
+		label WhereDidItGo
+		- Through the wall?
+			Bobbi: “But there’s no evidence on the walls…? No markings or damage.”
+			Charles: “You really don’t want it to be a ghost, eh?”
+			jump WhereDidItGo
+		- Out the door?
+			Bobbi: “Sorry, no eye witnesses. Plus if something left out of the door, wouldn’t we see wet spots everywhere…?”
+			jump WhereDidItGo
+		- Through the pipes?
+			Charles: “Like Sherlock says, if everything else is impossible, assume it’s the last thing you think of. We got something that can go through the plumbing.”
+			Bobbi: “But did it come through the pipes too?”
+			Charles: “Yep."
+			Bobbi: “I guess I should have my people block the other showers in the building?”
+			Charles: “To be safe, yeah.”
+			set {7questions.whereDidItGo} = true
+			jump startOfQuestions
+	- What was it going to do? [if {7questions.whatWasItGoing} == false][else="disable"]
+		label whatWasItGoing
+		- It was hungry?
+			Bobbi: “For what?”
+			Charles: “Blood?”
+			Bobbi: “That could’ve just washed down the drain.”
+			Charles: “Something to keep in mind then.”
+			jump whatWasItGoing
+		- It was angry?
+			Bobbi: “Revenge?”
+			Charles: “Classic monster motivation. Or potentially someone controlling a monster.”
+			Bobbi: “Do you… know that for sure…?”
+			Charles: “...”
+			jump whatWasItGoing
+		- Can't say for sure.
+			Charles: “We haven’t even met the thing, so we can’t know it’s motives for sure until we either find a more recent attack or find the thing itself…”
+			Bobbi: “Always reacting, can never just prevent this sort of thing…”
+			set {7questions.whatWasItGoing} = true
+			jump startOfQuestions
+	- What is being concealed here? [if {7questions.beingConcealed} == false][else="disable"]
+		- Thoroughly checked.
+		Bobbi: “Of course I have. What do you take me for?”
+		Charles: “Wait… I feel like I’m forgetting something…”
+		- What’s on the phone?
+			Bobbi: “Oh damn.”
+			Charles: "I knew we forgot something. Get someone to charge that thing in case there’s anything important on it.”
+			Bobbi: “Shoulda been on that already. Fuck.”
+			set {7questions.beingConcealed} = true
+			jump startOfQuestions
