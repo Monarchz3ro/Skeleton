@@ -1,0 +1,29 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(0.519531, 0.0263824, 0.0263824, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": " attack",
+"description": "",
+"display_name": "The Octopus",
+"mirror": false,
+"nicknames": [""],
+"offset": Vector2(0, 0),
+"portraits": {
+" attack": {
+"export_overrides": {
+"image": "\"res://characters/portraits/Octopus_Attack.webp\""
+},
+"mirror": false,
+"offset": Vector2(-20, 20),
+"scale": 0.75,
+"scene": ""
+}
+},
+"scale": 1.0
+}

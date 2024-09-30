@@ -1,6 +1,6 @@
 extends Node2D
 
-var requiredItems = ["multiply", "plus", "body", "mirror"]
+var requiredItems = ["toilet", "counter", "body", "mirror", "showerHead", "showerDrain"]
 var doneExamining : bool = false
 var nextTimeline = "e1Questions"
 

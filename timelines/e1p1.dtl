@@ -1,11 +1,11 @@
+[background arg="res://Backgrounds/Black_back.png" fade="0.0"]
 [wait_input]
-Greg Studies, a normal college student, is preparing for his day early in the morning by taking a nice hot shower. Generic young guy in a t-shirt with a towel around his shoulders.
-Brown hair or whatever you’re feeling. Do whatever you want, just make sure he’s dressed like he just woke up with a towel around his shoulders.
-"Greg Studies": “GAH. Cold… I gotta let this thing warm up…” He backs away from the shower.
-[background arg="res://Backgrounds/Bathroom_1.png" fade="2.0"]
+[background arg="res://Backgrounds/Bathroom_1.png" fade="3.0" transition="Simple Fade"]
+narrator: Greg Studies, a normal college student, is preparing for his day early in the morning by taking a nice hot shower. Generic young guy in a t-shirt with a towel around his shoulders.
+narrator: Brown hair or whatever you’re feeling. Do whatever you want, just make sure he’s dressed like he just woke up with a towel around his shoulders.
 In the unisex bathroom at his local college, he preps for the day. He starts up his phone as he begins playing some music to shower to.
 "Greg Studies": “Huh…?” Greg turns his head and sees all the steam, “What the hell…?”
-“Jesus, did something break? Huh? AAGGGHHHH!”
+"Greg Studies": “Jesus, did something break? Huh? AAGGGHHHH!”
 [background arg="res://Backgrounds/Bathroom_4.png" fade="3.0" transition="Simple Fade"]
 [wait time="3.0"]
 mysteryCharacter: “Dinner time…”
@@ -13,3 +13,4 @@ mysteryCharacter: “Dinner time…”
 [background arg="res://Backgrounds/Black_back.png" fade="3.0"]
 [wait time="3.0"]
 jump e1p2/
+join narrator 2

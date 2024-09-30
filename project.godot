@@ -26,6 +26,7 @@ directories/dch_directory={
 "Bobbi": "res://characters/Bobbi.dch",
 "Charles": "res://characters/Charles.dch",
 "Greg Studies": "res://characters/Greg Studies.dch",
+"The Octopus": "res://Backgrounds/The Octopus.dch",
 "mysteryCharacter": "res://characters/mysteryCharacter.dch",
 "narrator": "res://characters/narrator.dch",
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
@@ -33,16 +34,18 @@ directories/dch_directory={
 directories/dtl_directory={
 "afterQuestions": "res://timelines/afterQuestions.dtl",
 "body": "res://timelines/body.dtl",
+"counter": "res://timelines/counter.dtl",
 "e1Questions": "res://timelines/e1Questions.dtl",
 "e1p1": "res://timelines/e1p1.dtl",
 "e1p2": "res://timelines/e1p2.dtl",
 "finale": "res://timelines/finale.dtl",
 "mirror": "res://timelines/mirror.dtl",
-"multiply": "res://timelines/multiply.dtl",
-"plus": "res://timelines/plus.dtl",
+"showerDrain": "res://timelines/showerDrain.dtl",
+"showerHead": "res://timelines/showerHead.dtl",
 "tl1": "res://timelines/tl1.dtl",
 "tl2": "res://timelines/tl2.dtl",
-"tl3": "res://timelines/tl3.dtl"
+"tl3": "res://timelines/tl3.dtl",
+"toilet": "res://timelines/toilet.dtl"
 }
 variables={
 "7questions": {
@@ -59,9 +62,11 @@ variables={
 "clickableScene": "",
 "inventoryItems": {
 "body": 0,
+"counter": 0,
 "mirror": 0,
-"multiply": 0,
-"plus": 0
+"showerDrain": 0,
+"showerHead": 0,
+"toilet": 0
 }
 }
 text/letter_speed=0.01

@@ -25,7 +25,7 @@ func _on_dialogic_signal(arg):
 			Dialogic.VAR.set('clickableScene', arg.filename)
 			
 		"background": #changes the background of the timeline
-			$TextureRect.texture = load("res://background/%s" % arg.filename)
+			$TextureRect.texture = load("res://Backgrounds/%s" % arg.filename)
 			
 		"SFX":   
 			$FmodBankLoader/FmodEventEmitter2D["event_parameter/SFX/value"] = arg.SFX
@@ -65,6 +65,8 @@ func _on_load_button_pressed() -> void:
 		Dialogic.VAR.set('clickableScene', clickScene)
 		
 		if Dialogic.VAR.get("canContinue"):
-			instantiatedClickScene.get_child(0).visible = true
+			instantiatedClickScene.get_child(0).get_child(0).visible = true
+		else:
+			instantiatedClickScene.get_child(0).get_child(0).visible = false
 	
 	
