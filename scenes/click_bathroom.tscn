@@ -1,40 +1,65 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmrrmgi157po6"]
+[gd_scene load_steps=4 format=3 uid="uid://cmrrmgi157po6"]
 
 [ext_resource type="Script" path="res://scripts/click_bathroom.gd" id="1_75e66"]
 [ext_resource type="PackedScene" uid="uid://bgtwu4is1qx01" path="res://scenes/inventory_item.tscn" id="2_w73y7"]
+[ext_resource type="Texture2D" uid="uid://b63e4ue38gjhw" path="res://Backgrounds/Crime_1.png" id="3_l2jes"]
 
 [node name="clickableScene" type="Node2D"]
 script = ExtResource("1_75e66")
 
-[node name="continue" type="Button" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="continue" type="Button" parent="CanvasLayer"]
 visible = false
-offset_left = 732.0
-offset_top = 546.0
-offset_right = 809.0
-offset_bottom = 577.0
+offset_left = 737.0
+offset_top = 548.0
+offset_right = 814.0
+offset_bottom = 579.0
 text = "continue"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 1.0
+offset_right = 816.0
+offset_bottom = 630.0
+scale = Vector2(1.00365, 0.99841)
+texture = ExtResource("3_l2jes")
+expand_mode = 1
 
 [node name="items" type="Node" parent="."]
 
 [node name="inventoryItem" parent="items" instance=ExtResource("2_w73y7")]
-position = Vector2(108, 83)
-itemName = "plus"
+position = Vector2(270, 375)
+itemName = "toilet"
 spritePath = "res://clickableObjects/plus.svg"
 
 [node name="inventoryItem2" parent="items" instance=ExtResource("2_w73y7")]
-position = Vector2(238, 88)
-itemName = "multiply"
+position = Vector2(746, 101)
+itemName = "showerHead"
 spritePath = "res://clickableObjects/multiply.svg"
 disappearOnClick = true
 
 [node name="inventoryItem3" parent="items" instance=ExtResource("2_w73y7")]
-position = Vector2(357, 86)
+position = Vector2(407, 543)
+scale = Vector2(2.905, 0.9)
 itemName = "body"
 spritePath = "res://clickableObjects/body.svg"
 
 [node name="inventoryItem4" parent="items" instance=ExtResource("2_w73y7")]
-position = Vector2(451, 83)
+z_index = 0
+position = Vector2(87, 228)
+scale = Vector2(1.2, 2.24)
 itemName = "mirror"
 spritePath = "res://clickableObjects/mirror.svg"
 
-[connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]
+[node name="inventoryItem5" parent="items" instance=ExtResource("2_w73y7")]
+position = Vector2(109, 421)
+scale = Vector2(1.47, 1)
+itemName = "counter"
+spritePath = "es://clickableObjects/multiply.svg"
+
+[node name="inventoryItem6" parent="items" instance=ExtResource("2_w73y7")]
+position = Vector2(746, 523)
+itemName = "showerDrain"
+spritePath = "es://clickableObjects/multiply.svg"
+
+[connection signal="pressed" from="CanvasLayer/continue" to="." method="_on_continue_pressed"]

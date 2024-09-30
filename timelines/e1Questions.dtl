@@ -1,6 +1,9 @@
+[background arg="res://Backgrounds/Crime_1.png" fade="0.0"]
 Bobbi: “Alright. Lay down the questions.”
+join Charles 0
 label startOfQuestions
 if {7questions.whatCanHurtIt} == true and {7questions.whatCanItDo} == true and {7questions.whatHappendHere} == true and {7questions.whatSortOfCreature} == true and {7questions.whatWasItGoing} == true and {7questions.whereDidItGo} == true and {7questions.beingConcealed} == true:
+	leave Charles [animation="Slide Out Left"]
 	jump afterQuestions/
 else:
 	- What happened here? [if {7questions.whatHappendHere} == false][else="disable"]

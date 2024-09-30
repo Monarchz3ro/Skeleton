@@ -1,4 +1,6 @@
-[wait time="3.0"]
+[background arg="res://Backgrounds/Hallway_1.png" fade="1.0"]
+[wait time="1.0"]
+join Charles 0 [animation="Slide In Left" length="1" wait="true"]
 Bobbi: “Hold up. I got one question.”
 Charles: “On top of my 7 hypotheticals?”
 Bobbi: “Yeah. Where did it come from?”
@@ -17,9 +19,11 @@ Bobbi: “Ugh, jeez. So demanding.”
 Charles: “Do you want it to be ghosts or not?!”
 Bobbi: “NO! Jeez! Fine! There’s only, like, 10 people livin’ here right now anyway. Spring break and all that jazz.”
 Charles: “Alright. I’ll check the phone once it’s charged.”
-Charles would spend the next hour trying to unlock the victim’s phone and getting stuck in 30 second lock loops as he tried to use a stylus to draw every pattern he could think of while Bobbi was out getting interviews with the other present students.
+join narrator 2 [animation="Fade In Up"]
+narrator (neutral): Charles would spend the next hour trying to unlock the victim’s phone and getting stuck in 30 second lock loops as he tried to use a stylus to draw every pattern he could think of while Bobbi was out getting interviews with the other present students.
 Charles: “YOU’RE SERIOUS!? IT WAS JUST AN N SHAPE!?”
-He nearly chucks the phone into the wall but keeps his anger in check. Bobbi comes by finally as he stares at the notifications that are loading up on the victim’s phone.
+narrator (neutral): He nearly chucks the phone into the wall but keeps his anger in check. Bobbi comes by finally as he stares at the notifications that are loading up on the victim’s phone.
+leave narrator [animation="Fade Out Down"]
 Charles: “Oof… a lot of internet friends to notify… that’s gonna suck…”
 Bobbi: “We’ll get that figured out later. Anything that could help us?”
 Charles: “Well it played this when I turned it on.”
@@ -60,4 +64,6 @@ Bobbi: “Speaking from experience?”
 Bobbi: “Probably.”
 Bobbi: “...”
 Charles: “Let’s go.”
+leave Charles [animation="Fade Out Down" length="1" wait="true"]
+[background arg="res://Backgrounds/Black_back.png" fade="3.0"]
 jump finale/

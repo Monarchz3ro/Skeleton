@@ -5,15 +5,36 @@
 "color": Color(0.597438, 0.180038, 0.808594, 1),
 "custom_info": {
 "sound_mood_default": "",
-"sound_moods": {},
-"style": ""
+"sound_moods": {
+"Mood 1": {
+"mode": 0,
+"name": "Mood 1",
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
+"skip_characters": 0.0,
+"sound_path": "",
+"volume_base": 0.0,
+"volume_variance": 0.0
+}
 },
-"default_portrait": "",
+"style": "portraitStyle"
+},
+"default_portrait": "neutral",
 "description": "",
-"display_name": "Charles",
+"display_name": "Xanadu",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
-"portraits": {},
+"portraits": {
+"neutral": {
+"export_overrides": {
+"image": "\"res://characters/portraits/Xanadu_Neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(20, 0),
+"scale": 0.75,
+"scene": ""
+}
+},
 "scale": 1.0
 }
