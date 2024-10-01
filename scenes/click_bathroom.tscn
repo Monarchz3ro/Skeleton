@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cmrrmgi157po6"]
 
 [ext_resource type="Script" path="res://scripts/click_bathroom.gd" id="1_75e66"]
+[ext_resource type="Texture2D" uid="uid://bfj7tkjdhsclp" path="res://Backgrounds/Aftercredits_3.png" id="2_40o2i"]
 [ext_resource type="PackedScene" uid="uid://bgtwu4is1qx01" path="res://scenes/inventory_item.tscn" id="2_w73y7"]
-[ext_resource type="Texture2D" uid="uid://b63e4ue38gjhw" path="res://Backgrounds/Crime_1.png" id="3_l2jes"]
 
 [node name="clickableScene" type="Node2D"]
 script = ExtResource("1_75e66")
@@ -18,11 +18,10 @@ offset_bottom = 579.0
 text = "continue"
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_top = 1.0
 offset_right = 816.0
 offset_bottom = 630.0
 scale = Vector2(1.00365, 0.99841)
-texture = ExtResource("3_l2jes")
+texture = ExtResource("2_40o2i")
 expand_mode = 1
 
 [node name="items" type="Node" parent="."]

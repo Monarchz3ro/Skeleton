@@ -26,9 +26,27 @@
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
+"negative": {
+"export_overrides": {
+"image": "\"res://characters/portraits/Xanadu_Negative.png\""
+},
+"mirror": false,
+"offset": Vector2(20, 0),
+"scale": 0.75,
+"scene": ""
+},
 "neutral": {
 "export_overrides": {
 "image": "\"res://characters/portraits/Xanadu_Neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(20, 0),
+"scale": 0.75,
+"scene": ""
+},
+"positive": {
+"export_overrides": {
+"image": "\"res://characters/portraits/Xanadu_Positive.png\""
 },
 "mirror": false,
 "offset": Vector2(20, 0),

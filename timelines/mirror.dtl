@@ -1,10 +1,12 @@
-Charles: “Damn, whatever killed this guy must’ve moved fast to leave a bloodstain like this on the mirror. Like someone whipped a paintbrush at the wall.”
+join Charles (neutral) 1 [animation="Fade In Up" length="0.7" wait="true"]
+Charles (negative): “Damn, whatever killed this guy must’ve moved fast to leave a bloodstain like this on the mirror. Like someone whipped a paintbrush at the wall.”
 Bobbi: “Too bad it doesn’t really say much else. We’re lucky the steam from the shower didn’t melt it at least, helps us position the assailant.”
 Charles: "Oh, you got a rough sketch of where everyone was standing?”
 Bobbi: “Yep. Guy wasn’t moved so he just collapsed after having his neck slashed. Killer was standing roughly by the shower in all the steam. Door was locked the entire time.”
 Charles: “Considering I doubt someone would walk in here with the shower already running, that means whatever killed him appeared right after he turned on the shower, and then moved away to let it heat up…”
 Bobbi: “We’re not dealing with a ghost are we?”
-Charles: “Not yet. We might be eventually if this guy’s case isn’t solved. Hopefully he didn’t leave any novels unfinished.”
+Charles (positive): “Not yet. We might be eventually if this guy’s case isn’t solved. Hopefully he didn’t leave any novels unfinished.”
 Bobbi: “Don’t FUCKING joke about that…”
-Charles: “At any rate, I figure we’d hear about deaths in this specific bathroom if that were the case. For now we have to assume this is a new thing and not likely a ghostly presence.”
+Charles (neutral): “At any rate, I figure we’d hear about deaths in this specific bathroom if that were the case. For now we have to assume this is a new thing and not likely a ghostly presence.”
 “Order of Events” added to Evidence Locker.
+leave --All-- [animation="Fade Out Down" length="0.7" wait="true"]

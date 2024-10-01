@@ -1,17 +1,13 @@
-join narrator (neutral) 2 [animation="Fade In Up" length="3" wait="true"]
 narrator (neutral): Later that day, the body was discovered. Nobody could make heads or tails of it, but a guy who knows a guy who knows a guy… knows a special sort. And they called.
 narrator (neutral): Charles “Xanadu” Bones, Private Investigator walks up to the college dorm, multiple students either locked into their rooms for the day or sent out once questioning gives them a proper alibi.
 narrator (neutral): Luckily, it was spring break, and 90% of students were away from college for the week.
 narrator (neutral): Charles walks up to to his police contact Bobbi Flatfoot (a woman with wild hair tied back into a pom shaped ponytail). It was raining outside so everything was pretty damp.
 narrator (neutral): The reception of the dorm let him in once Bobbi sees him. She stands in front of him with a hand on her hip, obviously chewing gum.
-leave narrator [animation="Fade Out Down"]
 [background arg="res://Backgrounds/Hallway_1.png" fade="2.0"]
 Bobbi: “What’s up, Xanadu? Glad you took my call. Shit reeks.”
 [wait time="2.0"]
-join narrator (neutral) 2 [animation="Fade In Up" wait="true"]
 narrator (neutral): Bobbi Flatfoot, a junior detective and one I had the… pleasure of interacting with on some of my beginning cases. Not sure who the unlucky one is here, me or her.
 narrator: She’s from California, having moved to New York City for whatever reason, and she absolutely not lost the California in her, being her own mobile piece of the Golden State.
-leave narrator [animation="Fade Out Down"]
 join Charles 0
 Charles (neutral): “Good to see you too Bobbi. I don’t get called in on normal murders too often.”
 Charles: I’m Charles “Xanadu” Bones. The nickname comes from Bobbi, and now it’s all everyone calls me somehow. I used to be a baker before events in my life left me… without the ability to taste. Using my… eye for details in other ways.
@@ -21,15 +17,16 @@ Charles: I say consistent, the type of cases I work are rarely… consistent. I�
 Charles: But I suppose I should count my blessings. I don’t want to always deal with a… Monster of the Week…
 Bobbi: “Calling them “normal murders” makes my job sound lame as hell.”
 Bobbi: “Anyway, you know I’m not calling you for anything normal. C’mon, this a nice juicy locked room murder. I’m sure if you solve this you’ll be getting a lot more than finding lost dogs.”
-Charles: “Dogs just love me in the ways that I wish they didn’t. I still have the bite marks on my legs… and hey, I got other clients outside of those.”
-Charles: “Well this looks pretty messy. I’d be nauseous right now, I bet… How old’s the body?”
-Bobbi: “Few hours out of date considering alibis and when he was last seen. Hard to tell anything more specific because the shower’s been spraying hot water and steam the whole time he’s been dead. Probably washed away a lot of the blood too.”
-Charles: “And who is… “he”?”
+Charles (negative): “Dogs just love me in the ways that I wish they didn’t. I still have the bite marks on my legs… and hey, I got other clients outside of those.”
+leave --All--
+[background arg="res://Backgrounds/Aftercredits_3.png" fade="3.0"]
+[wait time="3.0"]
+join Charles (negative) 0 [animation="Fade In Up" length="0.75" wait="true"]
+Charles (negative): “Well this looks pretty messy. I’d be nauseous right now, I bet… How old’s the body?”
+Bobbi: “Few hours out of date considering alibis and when he was last seen. Hard to tell anything more specific because the shower’s been spraying hot water and steam the whole time he’s been dead."
+Bobbi: "Probably washed away a lot of the blood too.”
+Charles (neutral): “And who is… “he”?”
 Bobbi: “Greg Studies, literature student here at Vigtorious University… How about you look around yourself and I’ll just reveal info as we go.”
 Charles: “Works for me.”
-leave Charles
-[background arg="res://Backgrounds/Black_back.png" fade="2.0"]
-[wait time="2.0"]
-[background arg="res://Backgrounds/Crime_1.png" fade="2.0"]
-[wait time="2.0"]
+You can now click on the screen to gather evidence.
 [signal arg_type="dict" arg="{"filename":"click_bathroom","type":"clickableScene"}"]
