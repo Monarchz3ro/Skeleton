@@ -1,6 +1,5 @@
-you finished clicking everything on required on the screen
-if true == true and true == true:
-	in the state
-else:
-	not in the else
-[end_timeline]
+[background arg="res://Backgrounds/Black_back.png" fade="5.0"]
+[wait time="5.2"]
+[signal arg_type="dict" arg="{"filename":"Black_back.png","type":"background"}"]
+The End for now.
+Thank you for playing our demo!

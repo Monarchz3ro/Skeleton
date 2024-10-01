@@ -1,15 +1,15 @@
-[background arg="res://Backgrounds/Crime_1.png" fade="0.0"]
+[background arg="res://Backgrounds/Aftercredits_3.png" fade="0.0"]
 Bobbi: “Alright. Lay down the questions.”
 join Charles 0
 label startOfQuestions
 if {7questions.whatCanHurtIt} == true and {7questions.whatCanItDo} == true and {7questions.whatHappendHere} == true and {7questions.whatSortOfCreature} == true and {7questions.whatWasItGoing} == true and {7questions.whereDidItGo} == true and {7questions.beingConcealed} == true:
 	leave Charles [animation="Slide Out Left"]
-	jump afterQuestions/
+	jump tl3/
 else:
 	- What happened here? [if {7questions.whatHappendHere} == false][else="disable"]
 		label whatHappendHere
 		- Order of Events
-			Charles: “Pretty straight forward. The monster appeared right behind the guy, he turned a bit, got his throat slit, fell over, and the monster disappeared after potentially doing something to his body.”
+			Charles (neutral): “Pretty straight forward. The monster appeared right behind the guy, he turned a bit, got his throat slit, fell over, and the monster disappeared after potentially doing something to his body.”
 			Bobbi: “Lines up with my notes.”
 			set {7questions.whatHappendHere} = true
 			jump startOfQuestions

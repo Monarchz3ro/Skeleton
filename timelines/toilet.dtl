@@ -1,6 +1,9 @@
+join Charles (neutral) 2 [animation="Fade In Up" length="0.7" wait="true"]
 Bobbi: “I hope there wasn’t anything important stuck in there.”
 Charles: “I’m sure we would’ve heard some rattling around.”
-Bobbi: "Ugh. Good thing I can’t smell anymore either…”
+Bobbi: “Whatever you say. You’re reaching in there if we find something later.”
+Charles (negative): "Ugh. Good thing I can’t smell anymore either…”
 Bobbi: “PAH! The look on your face! Haaah… Don’t worry about it, Xanadu, forensics guys already stuck their hands waaaayyy up in there. Nothing to be found other than some rust.”
-Charles: "Remarkably thorough.”
+Charles (neutral): "Remarkably thorough.”
 Bobbi: “Always am.”
+leave --All-- [animation="Fade Out Down" length="0.7" wait="true"]

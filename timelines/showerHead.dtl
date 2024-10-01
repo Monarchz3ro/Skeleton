@@ -1,5 +1,7 @@
+join Charles (neutral) 0 [animation="Fade In Up" length="0.7" wait="true"]
 Charles: “Hmmmmm…”
 Charles: “This shower head is loose…”
 Bobbi: “It’s a college shower, do you really think shower maintenance is at the top of people’s lists?”
 Charles: “Just making a note…”
 “Loose Shower Head” added to Evidence Locker.
+leave --All-- [animation="Fade Out Down" length="0.7" wait="true"]
