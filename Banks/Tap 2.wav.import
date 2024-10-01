@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cuv2iitwjl5ij"
+path="res://.godot/imported/Tap 2.wav-9466030a306b8a7d1846590a3deca1b2.sample"
+
+[deps]
+
+source_file="res://Banks/Tap 2.wav"
+dest_files=["res://.godot/imported/Tap 2.wav-9466030a306b8a7d1846590a3deca1b2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

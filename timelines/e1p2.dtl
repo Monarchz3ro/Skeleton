@@ -28,5 +28,6 @@ Bobbi: "Probably washed away a lot of the blood too.”
 Charles (neutral): “And who is… “he”?”
 Bobbi: “Greg Studies, literature student here at Vigtorious University… How about you look around yourself and I’ll just reveal info as we go.”
 Charles: “Works for me.”
+[signal arg_type="dict" arg="{"SFX":"9","type":"SFX"}"]
 You can now click on the screen to gather evidence.
 [signal arg_type="dict" arg="{"filename":"click_bathroom","type":"clickableScene"}"]

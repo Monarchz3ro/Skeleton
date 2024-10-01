@@ -1,3 +1,4 @@
+[signal arg_type="dict" arg="{"SFX":"11","type":"SFX"}"]
 [background arg="res://Backgrounds/Black_back.png" fade="5.0"]
 [wait time="5.2"]
 [signal arg_type="dict" arg="{"filename":"Black_back.png","type":"background"}"]

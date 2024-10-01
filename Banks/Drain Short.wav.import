@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dx3p7aa3m6ayx"
+path="res://.godot/imported/Drain Short.wav-bb9ba65c14f06530ccaf775885bb9077.sample"
+
+[deps]
+
+source_file="res://Banks/Drain Short.wav"
+dest_files=["res://.godot/imported/Drain Short.wav-bb9ba65c14f06530ccaf775885bb9077.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

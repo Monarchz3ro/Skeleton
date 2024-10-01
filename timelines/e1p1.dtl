@@ -1,18 +1,32 @@
 [background arg="res://Backgrounds/Black_back.png" fade="0.0"]
 [wait_input]
+[signal arg_type="dict" arg="{"Music":"0","type":"Music"}"]
+[signal arg_type="dict" arg="{"SFX":"1","type":"SFX"}"]
 Episode 1, A Locked Bathroom Mystery
 narrator: Greg Studies, a normal college student, is preparing for his day early in the morning by taking a nice hot shower.
+[signal arg_type="dict" arg="{"SFX":"2","type":"SFX"}"]
 "Greg Studies": “GAH. Cold… I gotta let this thing warm up…” He backs away from the shower.
+[signal arg_type="dict" arg="{"SFX":"3","type":"SFX"}"]
 narrator: In the unisex bathroom at his local college, he preps for the day. He starts up his phone as he begins playing some music to shower to.
 [background arg="res://Backgrounds/Bathroom_1.png" fade="2.0" transition="Simple Fade"]
-[wait time="2.0"]
+[wait time="3.0"]
+[signal arg_type="dict" arg="{"Music":"1","type":"Music"}"]
+[signal arg_type="dict" arg="{"SFX":"4","type":"SFX"}"]
 "Greg Studies": “Huh…?” Greg turns his head and sees all the steam, “What the hell…?”
+[signal arg_type="dict" arg="{"Music":"3","type":"Music"}"]
+[signal arg_type="dict" arg="{"SFX":"5","type":"SFX"}"]
 [background arg="res://Backgrounds/Bathroom_2.png" fade="3.0"]
 [wait time="3.0"]
-"Greg Studies": “Jesus, did something break? Huh? AAGGGHHHH!”
+"Greg Studies": “Jesus, did something break?”
+[signal arg_type="dict" arg="{"SFX":"6","type":"SFX"}"]
+"Greg Studies": “Huh? AAGGGHHHH!”
 [background arg="res://Backgrounds/Bathroom_3.png" fade="2.0" transition="Simple Fade"]
 [wait time="2.5"]
+[signal arg_type="dict" arg="{"SFX":"7","type":"SFX"}"]
 mysteryCharacter: “Dinner time…”
+[signal arg_type="dict" arg="{"Music":"4","type":"Music"}"]
 [background arg="res://Backgrounds/Black_back.png" fade="3.0"]
+[signal arg_type="dict" arg="{"SFX":"8","type":"SFX"}"]
+[signal arg_type="dict" arg="{"Music":"0","type":"Music"}"]
 [wait time="3.0"]
 jump e1p2/

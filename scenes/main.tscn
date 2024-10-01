@@ -29,5 +29,23 @@ text = "load"
 offset_right = 819.0
 offset_bottom = 629.0
 
+[node name="FmodBankLoader" type="FmodBankLoader" parent="."]
+bank_paths = ["res://Banks/Master.strings.bank", "res://Banks/Master.bank"]
+
+[node name="FmodEventEmitter2D" type="FmodEventEmitter2D" parent="FmodBankLoader"]
+event_name = "event:/SFX"
+event_guid = "{743f55e0-1252-4220-932b-5e2178a802a6}"
+autoplay = true
+event_parameter/Music/id = 5176342407837459557
+event_parameter/Music/value = 0.0
+event_parameter/Music/min_value = 0.0
+event_parameter/Music/max_value = 10.0
+event_parameter/Music/default_value = 0.0
+event_parameter/SFX/id = -2643324517363643132
+event_parameter/SFX/value = 0.0
+event_parameter/SFX/min_value = 0.0
+event_parameter/SFX/max_value = 50.0
+event_parameter/SFX/default_value = 0.0
+
 [connection signal="pressed" from="CanvasLayer/saveButton" to="." method="_on_save_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/loadButton" to="." method="_on_load_button_pressed"]

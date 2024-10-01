@@ -1,3 +1,4 @@
+[signal arg_type="dict" arg="{"SFX":"10","type":"SFX"}"]
 [background arg="res://Backgrounds/Aftercredits_3.png" fade="0.0"]
 Bobbi: “Alright. Lay down the questions.”
 join Charles 0

@@ -1,3 +1,4 @@
+[sound path="res://Banks/Tap 1.wav" volume="0.0"]
 join Charles (neutral) 1 [animation="Fade In Up" length="0.7" wait="true"]
 Charles: “Shower supplies… dead phone… no towel cause it’s around the victim’s shoulders…”
 Bobbi: “All logged and categorized for any sort of allergens or random side effects.”

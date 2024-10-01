@@ -1,3 +1,4 @@
+[sound path="res://Banks/Drain Short.wav" volume="0.0"]
 join Charles 0 [animation="Fade In Up" length="0.7" wait="true"]
 Charles: “Hm… The grate on the drain is loose… curious…”
 Bobbi: “You almost done contaminating the crime scene? I know you always wear your gloves, heck I don’t even think you have fingerprints anymore, but you break something that could lead to even more water.”

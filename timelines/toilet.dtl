@@ -1,3 +1,4 @@
+[sound path="res://Banks/Toilet.wav" volume="0.0"]
 join Charles (neutral) 2 [animation="Fade In Up" length="0.7" wait="true"]
 Bobbi: “I hope there wasn’t anything important stuck in there.”
 Charles: “I’m sure we would’ve heard some rattling around.”
